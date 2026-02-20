@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    /* other backgrounds i tried but didnt like, but im not sure so i MIGHT switch back to them, so i'm just leaving them here */
+    /* background-color: #13245A; */
+    /* background-image: url(images/BackgroundIndex.jpg) */
+     background-image: linear-gradient(to bottom, #13245A, #13335a);
+     
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #23284d;
+    border-radius: 15px;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0px 2rem;
+    
+}
+
+image {
+    max-width: 100%;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+nav {
+    grid-column: span 2;
+    background-color: #0A0C26;
+    color: #FFFFFF;
+    margin: 2.5em 2em 1em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    word-spacing: 0.2em;
+}
+
+.logo {
+    max-height: 4.5rem;
+    border-radius: 50%;
+    margin: 0.2rem 1rem 0.2rem 2rem;
+}
+
+.banner-container {
+    grid-column: span 2;
+    margin: 1em 2em 0.5em;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.side-image-container {
+    grid-row: span 2;
+    margin: 1.5em 1em 5em 2em;
+}
+
+.side-image {
+    border-radius: 15px;
+}
+
+.game-summary-container {
+    grid-row: span 2;
+    margin: 1.5em 1.5em 6em 1em;
+    background-color: #0A0C26;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.summary {
+    padding: 0.5em 1em 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 1em;
+    max-width: 30%;
+}
+
