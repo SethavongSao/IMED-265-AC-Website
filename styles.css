@@ -192,6 +192,7 @@ h1 {
     margin: 1em 1.5em 1em 1em;
 
     }
+
     .summary {
     padding: 0.5em 1em 0.5em;
     font-size: 0.6em;
@@ -214,7 +215,7 @@ h2 {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
     ul {
     font-size: 0.8rem;
@@ -226,11 +227,34 @@ li {
 }
 
     h2 {
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
+
+    .side-image-container {
+    margin: 1em;
+    grid-column: 1 / 4;
+    }
+
+    .game-summary-container {
+    margin: 1em 1.5em 1em 1em;
+    grid-column: 1 / 4;
+    }
 
     .summary {
     padding: 0.5em 1em 0.5em;
-    font-size: 0.4em;
+    font-size: 0.8em;
+    
 }
+
+    .icon1 {
+    grid-column: 1 / 4;
+    }
+
+    .icon2 {
+    grid-column: 1 / 4;
+    }
+
+    .icon3 {
+    grid-column: 1 / 4;
+    }
 }
