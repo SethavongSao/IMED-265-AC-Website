@@ -25,6 +25,7 @@ ul {
     list-style-type: none;
     display: flex;
     font-size: 1.5rem;
+    padding-top: 1rem;
     
 }
 
@@ -39,17 +40,6 @@ img {
     
 }
 
-nav {
-    grid-column: span 3;
-    background-color: #0A0C26;
-    color: #FFFFFF;
-    margin: 2.5em 2em 1em;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 nav a{
     text-decoration: none;
   
@@ -61,6 +51,18 @@ h2 {
     font-weight: 1000;
     word-spacing: 0.2em;
 }
+
+.navigation {
+    grid-column: span 3;
+    background-color: #0A0C26;
+    color: #FFFFFF;
+    margin: 2.5em 2em 1em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .logo {
     max-height: 4.5rem;
@@ -131,6 +133,18 @@ h2 {
 .icon3 {
     max-inline-size: 100%;
     grid-column: 3 / 3;
+    border-radius: 15px;
+}
+
+.character-summary {
+    padding: 1rem;
+    background-color: #0A0C26;
+    border-radius: 15px;
+}
+
+.event-summary {
+    padding: 2rem;
+    background-color: #0A0C26;
     border-radius: 15px;
 }
 
