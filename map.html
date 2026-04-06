@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script defer src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    
+    <body class="text-white">
+        
+        <div class="container">
+            <!-- Navigation -->
+            <nav class="navigation">
+                <!-- 
+                <img class="logo" src="images/Logo.webp"> 
+                -->
+                <ul>
+                    
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="map.html">World Map</a>
+                    </li>
+                    <li>
+                        <a href="timeline.html">Timeline</a>
+                    </li>
+                    <li>
+                        <a href="characters.html">Characters</a>
+                    </li>
+                </ul>
+            </nav>  
+
+            <main class="container text-center">
+                <div class="row">
+                    <figure class=img-fluid">
+                        <img src="images/BelkanWarMap.svg" usemap="#MapTest">
+                    </figure>
+                    <!-- Interactable Map Coords -->
+                    <map name="MapTest">
+                         <!-- Belka -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#BelkaModal" 
+                        coords="460,435,467,444,473,439,479,423,499,409,488,396,499,391,512,391,522,382,512,374,522,370,516,363,516,354,505,340,517,323,505,321,504,314,516,310,519,298,531,307,544,310,560,299,556,287,568,285,569,267,583,226,589,216,593,180,630,178,623,161,634,126,612,113,612,103,549,135,472,168,439,150,425,181,416,177,417,159,437,139,428,138,426,128,443,123,428,118,394,123,368,142,353,153,327,147,323,160,339,165,332,187,364,203,363,278,355,287,372,296,367,311,391,329,396,343,396,360,427,376,436,391,427,403,440,411,447,405,456,411,459,425" 
+                        title="Belka" href="">
+                        <!-- Osea -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#OseaModal" 
+                        coords="344,199,364,206,364,279,355,293,372,299,367,309,388,329,396,349,397,360,428,378,435,387,428,403,440,409,459,435,468,451,466,471,484,500,494,529,422,575,0,575,2,513,150,392,151,338,48,391,24,386,125,286,112,255,64,263,23,255,35,283,3,343,3,28,104,50,136,59,148,1,270,1,300,35,245,185,291,196,316,208,333,205" 
+                        title="Osea" href="">
+                        <!-- FATO -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#FATOModal" 
+                        coords="634,109,655,116,660,126,676,98,702,97,694,113,704,123,702,143,802,130,822,120,831,137,872,133,891,143,878,154,880,174,906,174,912,160,917,187,936,187,935,227,897,281,882,323,852,333,830,342,784,335,787,309,767,298,752,278,739,264,735,242,736,227,712,211,700,216,674,195,647,189,631,179,622,163,632,151,634,126" 
+                        title="FATO" href="">
+                         <!-- Gebet -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#GebetModal" 
+                        coords="627,176,645,188,663,194,675,193,681,203,689,212,704,216,710,209,719,219,738,228,735,236,739,257,750,275,762,297,783,310,778,318,783,332,773,350,751,354,715,354,691,357,688,346,677,336,655,300,643,292,643,285,630,287,615,283,608,274,582,275,567,266,579,246,582,226,590,221,582,212,592,181,611,177" 
+                        title="Gebet" href="">
+                         <!-- Recta -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#RectaModal" 
+                        coords="567,268,567,285,556,289,556,299,544,308,553,315,550,333,559,348,586,347,607,348,617,343,629,346,637,344,653,348,661,372,670,396,701,389,710,398,706,427,720,437,737,431,761,429,752,405,778,391,780,373,772,353,742,355,719,354,693,356,682,342,665,315,655,297,644,294,614,283,581,274" 
+                        title="Recta" href="">
+                         <!-- Ustio -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#UstioModal" 
+                        coords="549,339,558,346,570,343,590,348,596,360,602,388,607,408,614,434,596,431,580,442,548,436,521,422,506,409,498,407,490,395,498,388,510,392,523,383,512,375,524,367,516,362,514,349,506,338,516,325,515,318,503,320,516,300,530,307,546,309,553,314,552,325" 
+                        title="Ustio" href="">
+                         <!-- Sapin -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#SapinModal" 
+                        coords="498,409,490,418,477,420,472,439,467,469,472,475,481,480,480,489,493,492,500,503,498,515,509,526,522,535,521,541,542,536,550,542,545,551,563,553,576,562,584,561,592,575,757,575,750,562,739,554,727,538,718,524,711,504,718,489,713,472,718,463,708,460,701,461,671,460,658,460,642,449,626,434,616,434,601,430,579,440,548,436,519,421,509,410" 
+                        title="Sapin" href="">
+                         <!-- Neutral -->
+                        <area shape="poly" data-bs-toggle="modal" data-bs-target="#NeutralModal" 
+                        coords="" 
+                        title="Neutral" href="">
+
+                    </map>
+                </div>
+            </main>
+
+
+            <!-- Belka Modal -->
+            <div class="modal fade" id="BelkaModal" tabindex="-1" aria-labelledby="BelkaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="BelkaModal">Belkan Federation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The Belkan Federation is a major country on the Osean continent. 
+                            The nation is best known for it's military history and for being one of the
+                            first countries to use aircraft in warfare. 
+                        </p>
+                        <p>
+                            During the 1980's, Belka focused it's industry on creating
+                            experimantal weapons of mass destruction. This increased military spending, along with a failed economic
+                            joint venture with the Osean Federation, lead to an economic recession by 1987. Belka would then either sell
+                            territories to their neighbors, or allow them to secede. 
+                        </p>
+                        <p>
+                            In an attempt to reclaim their territory and resources, Belka would declare war on all it's neighbors on March 1995,
+                            starting the Belkan War.
+                        </p>
+                        <img src="images/Flags/BelkanFlag.webp">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Osea Modal -->
+            <div class="modal fade" id="OseaModal" tabindex="-1" aria-labelledby="OseaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5" id="BelkaModal">Osean Federation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            The Osean Federation is one of the largest nations on the continent of Osea. It is a highly developed international superpower. 
+                        </p>
+                        <p>
+                            During the 1980's and 90's, the Osean Federation would take advantage of Belka's ongoing economic crisis. 
+                            They supported the seccession of Belka's eastern territories, and began to purchase Belka's western
+                            territories.
+                        </p>
+                         <p>
+                            In 1995, Belka declared war on all it's neighbors, including the Osean Federation. In response, The Osean Federation 
+                            created the Allied Forces, an alliance of different countries that were against Belka. 
+                        </p>
+                        <img src="images/Flags/OseaFlag.webp">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FATO Modal -->
+            <div class="modal fade" id="FATOModal" tabindex="-1" aria-labelledby="FATOModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">FATO</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            FATO is a small federal state in the Northeastern portion of the Osean continent. They purchased a small part of 
+                            Belkan territory during Belka's economic crisis.
+                        </p>
+                        <p>
+                            In 1995, the federal state was invaded and occupied by Belka during Belka's attempt to retake lost territory. 
+                            FATO's airforce was defeated by Belka's elite Indigo Squadron. During Belka's invasion, Indigo Squadron's leader, 
+                            Dimitri Heinreich, was able to shoot down nine FATO fighters within five minutes of combat.
+                        </p>
+                        <p>
+                            FATO was eventually liberated by the rest of the Allied Forces. 
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Gebet Modal -->
+            <div class="modal fade" id="GebetModal" tabindex="-1" aria-labelledby="GebetModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">Gebet</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Gebet is a small country on the Eastern side of the continent of Osea.
+                        </p>
+                        <p>
+                             Formerly a Belkan territory, they became independent during Belka's economic crisis 
+                             when Belka sold it's territories in an attempt to save their economy.
+                        </p>
+                        <p>
+                            They were invaded by Belka in 1995 during Belka's attempt to retake their lost territory, causing
+                            Gebet to join the Allied Forces. 
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recta Modal -->
+            <div class="modal fade" id="RectaModal" tabindex="-1" aria-labelledby="RectaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">Recta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        Recta is a landlocked country located in eastern Osea. In the 1960's, Recta was invaded and annexed by the Belkan Federation.
+                        <p>
+                        In the 1970's, Recta attempted to revolt against it's occupiers. At first, Recta fought Belka into a stalemate, until eventually Recta was defeated
+                        by an elite Belkan air force squadron, Silber Team.
+                        </p>
+                        </p>
+                        <p>
+                        In the 1980's, Belka faced an economic crisis. During this crisis, Recta was able to secede and become an independent nation again.
+                        </p>
+                        <p>
+                        Eventually, Belka would declare war on all it's neighbors in an attempt to take back lost territory.
+                        </p>
+            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ustio Modal -->
+            <div class="modal fade" id="UstioModal" tabindex="-1" aria-labelledby="UstioModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">Ustio</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            The Republic of Ustio is a small landlocked nation that was formerly a part of the Belkan Federation.
+                            Most of the country is made up of farmland, remote towns, and a few mountain ranges.
+                            It seceded from Belka during Belka's economic crisis, declaring independence in 1988. 
+                        </p>
+                        <p>
+                            Belka would attempt to conquer it's lost territory, declaring war on all it's neighbors in 1995. 
+                            Ustio would end up being occupied by Belka, until the Allied Forces and hired mercenaries were
+                            able to liberate the country. 
+                        </p>
+                        <img src="images/Flags/UstioFlag.webp">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sapin Modal -->
+            <div class="modal fade" id="SapinModal" tabindex="-1" aria-labelledby="SapinModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">Sapin</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The Kingdom of Sapin is a country in the eastern parts of the continent, Osea. 
+                            During Belka's economic crisis, they would aqquire a portion of Belka's southern territories. 
+                        </p>
+                        <p>
+                            In March 1995, Belka would declare war on all it's neighbors in an attempt to regain their territory.
+                            The kingdom joined the Allied Forces, and was able to fight back against Belka's invasion. 
+                        </p>
+                        <img src="images/Flags/SapinFlag.webp">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neutral Modal -->
+            <div class="modal fade" id="NeutralModal" tabindex="-1" aria-labelledby="NeutralModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="FATOModal">Neutral</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Neutral
+                            
+                        </p>
+                        <img src="images/placeholders/BelkanFlag.webp">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+       
+        </div>
+            
+    </body>
+</html>
