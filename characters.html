@@ -11,148 +11,177 @@
     
     <body class="text-white">
         
+   <nav class="navbar navbar-expand-sm navbar-dark mb-4" style="background-color:#0A0C26;">
+    <div class="container">
+     <a class="navbar-brand">
+        <img src="images/Galm1.webp" alt="Logo" height="75px">
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="timeline.html">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="characters.html">Characters</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
         <div class="container">
-            <!-- Navigation -->
-            <nav class="navigation">
-                <!-- 
-                <img class="logo" src="images/Logo.webp"> 
-                -->
-                <ul>
-                    
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="map.html">World Map</a>
-                    </li>
-                    <li>
-                        <a href="timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                        <a href="characters.html">Characters</a>
-                    </li>
-                </ul>
-            </nav>  
+       
 
             <!-- Main Characters Images  -->
  
+            <div class="row mb-5 d-flex justify-content-center">
+                <h1 class="row justify-content-center my-5">Main Characters</h1>
 
-
-            <div class="row my-4">
-
-                <h3 class="row justify-content-center my-3">Main Characters</h3>
-                <div class="col">
-                    
-                    <figure class="col">
-                        
-                        <img src="images/placeholders/500x500.png" alt=""> 
-                        <figcaption>Cipher</figcaption>    
-                    </figure>
-                    <figure class="col">
-                        <img src="images/placeholders/500x500.png" alt=""> 
-                        <figcaption>Larry Foulke</figcaption>
-                    </figure>
-                </div>
-                    
-
-                <div class="col">
-                    <figure class="col">
-                        <img src="images/placeholders/500x500.png" alt=""> 
-                        <figcaption>Patrick James Beckett</figcaption>
-                    </figure>
-                    <figure class="col">
-                        <img src="images/placeholders/500x500.png" alt=""> 
-                        <figcaption>Eagle Eye</figcaption>
-                    </figure>
-                </div>
+                <div class="col-lg text-center">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalCipher">
+                            <img class="img-fluid rounded" src="images/Characters/Cipher.png" alt="Cipher's Jet">
+                        </button>
+                        <figcaption class="fs-3 fw-medium mb-5">Cipher</figcaption>
                 
-
-                    <!-- Page Description -->
-
-                <div class="col-md-7">
-                    <section class="character-summary">
-                        <h2>Important Characters of Ace Combat Zero</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at ullam sequi, et delectus corporis nostrum, earum expedita, 
-                            porro placeat officia velit dicta unde voluptatibus mollitia aut ut explicabo alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at ullam sequi, et delectus corporis nostrum, earum expedita, 
-                            porro placeat officia velit dicta unde voluptatibus mollitia aut ut explicabo alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at ullam sequi, et delectus corporis nostrum, earum expedita, 
-                            porro placeat officia velit dicta unde voluptatibus mollitia aut ut explicabo alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at ullam sequi, et delectus corporis nostrum, earum expedita, 
-                            porro placeat officia velit dicta unde voluptatibus mollitia aut ut explicabo alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum at ullam sequi, et delectus corporis nostrum, earum expedita, 
-                            porro placeat officia velit dicta unde voluptatibus mollitia aut ut explicabo alias.</p>
-                    </section>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalLarry">
+                            <img class="img-fluid rounded" src="images/Characters/Larry.png" alt="Larry Foulke Portrait">
+                        </button>
+                        <figcaption class="fs-3 fw-medium mb-5">Larry Foulke</figcaption>
                 </div>
 
+                <div class="col-lg text-center">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalPJ">
+                            <img class="img-fluid rounded" src="images/Characters/PJ.png" alt="PJ's Jet">
+                        </button>
+                        <figcaption class="fs-3 fw-medium mb-5">Patrick James Beckett</figcaption>
+                    
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalEagle">
+                            <img class="img-fluid rounded" src="images/Characters/EagleEye.png" alt="Eagle Eye's AWACS Plane">
+                        </button>
+                        <figcaption class="fs-3 fw-medium mb-5">AWACS EagleEye</figcaption>
+                </div>
             </div>
 
-             <!-- Minor Characters -->
-              <section>
-                <h3 class="row justify-content-center my-3">Minor Characters</h3>
-
-               <div class="row row-cols-6">
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Detlef Fleisher</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Bernhard Schmidt</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Dimitri Heinreich</figcaption>    
-                    </figure>
-                    
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Rainer Altman</figcaption>    
-                    </figure>
-                    
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Dominic Zubov</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Erich Hillenberand</figcaption>    
-                    </figure>
                 
-
-                
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Dietrich Kellerman</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Marcela Vasquez</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Anthony Palmer</figcaption>    
-                    </figure>
-                    
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Joshua Bristow</figcaption>    
-                    </figure>
-                    
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Jack Bartlett</figcaption>    
-                    </figure>
-
-                    <figure class="col">
-                        <img src="images/placeholders/200x200.png" alt=""> 
-                        <figcaption>Wolfgang Buchner</figcaption>    
-                    </figure>
+                <div class="modal fade" id="ModalCipher" tabindex="-1" aria-labelledby="ModalCipherLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p>Cipher was a mercenary pilot employed by the Ustio Air Force's 6th Air Division. 
+                                He was the flight leader of Galm Team and primarily led the squadron during the Belkan War of 1995.
+                                Cipher is the player character in Ace Combat Zero: The Belkan War. His signature aircraft is the F-15C Eagle.
+                            </p>
+                            <p>
+                                Cipher is well known for having an extraordinarily high number of kills, 
+                                which earned him the nickname "Demon Lord of the Round Table".
+                            </p>
+                            <figure class="text-center">
+                                <img class="img-fluid" src="images/Characters/Cipher2.webp" alt="Cipher's Jet dodging a missle">
+                            </figure>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-              </section>
-        </div>
-            
+                <div class="modal fade" id="ModalLarry" tabindex="-1" aria-labelledby="ModalLarryLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Second Lieutenant Larry Foulke, callsign Pixy and nicknamed "Solo Wing", 
+                                    was a Belkan mercenary pilot employed by Ustio during the Belkan War. He is best
+                                     known for his service as Galm Team's number two and later as a member of the paramilitary 
+                                     terrorist organization A World With No Boundaries.
+                                </p>
+                                <p>
+                                    Foulke was an experienced pilot whose skills were well known among his fellow mercenaries. 
+                                    He was deeply affected by the ravages inflicted on both sides during the war; 
+                                    after witnessing the seven nuclear detonations on June 6, 1995, he went AWOL and 
+                                    defected to A World With No Boundaries.
+                                </p>
+                                <p>
+                                    Foulke was shot down over the Avalon Dam facility during his final encounter with his former wingman 
+                                    and flight leader, Cipher. Although injured, he survived the confrontation and later 
+                                    returned to mercenary service on battlefields around the world.
+                                </p>
+                            <figure class="text-center">
+                                <img class="img-fluid" src="images/Characters/Larry2.webp" alt="Larry holding a rifle">
+                            </figure>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="ModalPJ" tabindex="-1" aria-labelledby="ModalPJLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p>Second Lieutenant Patrick James Beckett, TAC name and common nickname PJ, was an Osean mercenary pilot 
+                            who served in the Belkan War. He was originally assigned to the Ustio Air Force 6th Air Division's Crow Team; 
+                            however, following Operation Ravage, he was officially transferred to the Galm Team.As part of Galm Team, 
+                            PJ flew under the position of "Galm 2" with Cipher as his flight lead.</p> 
+                            <p>He was killed by Larry Foulke on December 31, 1995 over the Avalon 
+                            Dam during Operation Point Blank.</p>
+                            <figure class="text-center">    
+                                <img class="img-fluid" src="images/Characters/PJ2.png" alt="PJ's F-16">
+                            </figure>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="ModalEagle" tabindex="-1" aria-labelledby="ModalEagleLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    AWACS Eagle Eye was the callsign of an Ustio Air Force AWACS during and after the Belkan War. 
+                                    As an AWACS, Eagle Eye's primary role was providing tactical data analysis and logistical support to other Ustian aircraft. 
+                                    Throughout the war, he accompanied and supported units of the UAF's mercenary division, in particular Galm Team.
+                                </p>
+                                <p>
+                                    Eagle Eye's tactical support for Galm Team, in particular for the pilot Cipher, contributed to the end of the Belkan War and for
+                                    Cipher's high kill count. 
+                                </p>
+                            <figure class="text-center">
+                                <img class="img-fluid" src="images/Characters/EagleEye2.png" alt="AWACS EagleEye">
+                            </figure>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>         
     </body>
 </html>

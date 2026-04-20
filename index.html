@@ -12,78 +12,97 @@
     
     <body>
 
-        <div class="main-container">
-            <!-- Navigation -->
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="map.html">World Map</a>
-                    </li>
-                    <li>
-                        <a href="timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                        <a href="characters.html">Characters</a>
-                    </li>
-                </ul>
-            </nav>  
-
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-sm navbar-dark mb-4" style="background-color:#0A0C26;">
+    <div class="container">
+     <a class="navbar-brand">
+        <img src="images/Galm1.webp" alt="Logo" height="75px">
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="timeline.html">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="characters.html">Characters</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+        <div class="container"> 
         <!-- Banner/Hero -->
-            <div class="banner-container">
-                <img class="banner" src="images/Banner.jpg" alt="Ace Combat Zero Cover Art">
+            <div class="row mt-3">
+                <img class="img-fluid rounded my-4" src="images/Banner.jpg" alt="Ace Combat Zero Cover Art">
             </div>
             
-            <!-- Side Image -->
-            <aside class="side-image-container">
-                <img class="side-image" src="images/SideImage2.png" alt="Ace Combat Zero Cover Art">
-                <!-- <img class="side-image" src="images/SideImage2.png" alt="Ace Combat Zero Cover Art"> -->
-            </aside>
             
-            <!-- Game Description -->
-            <main class="game-summary-container">
-                <article class="summary">
-                    <h2>
-                    Ace Combat Zero
-                    </h2>
-                    <p>
-                        Ace Combat Zero: The Belkan War, published in Europe as Ace Combat: The Belkan War, is the eighth installment 
-                        in the Ace Combat franchise and a prequel to Ace Combat 5: The Unsung War. 
-                        The game was developed alongside Ace Combat 6: Fires of Liberation and released in 2006.
-                        It was the first Ace Combat game to be released under the newly-merged Namco Bandai. 
-                        The setting takes place in an alternate universe called "Strangereal", during the eponymous Belkan War. 
-                    </p>
+                <div class="row mx-2 my-1">
+                    <!-- Side Image -->
+                    <aside class="col my-3">
+                        <img class="img-fluid rounded" src="images/SideImage2.png" alt="Ace Combat Zero Cover Art" width="100%">
+                        <!-- <img class="side-image" src="images/SideImage2.png" alt="Ace Combat Zero Cover Art"> -->
+                    </aside>
                     
-                    <p>
-                        The single-player campaign follows the story of a legendary mercenary ace, "Cipher", 
-                        and his impact on both the outcome of the Belkan War and the lives of the enemy aces he defeated in combat. 
-                        The story is narrated in retrospect by Osean journalist Brett Thompson and a series of his interviews with Belkan War veterans, 
-                        in particular with Cipher's former wingman Larry "Pixy" Foulke. 
-                    </p>
-                    
-                    <p>The central feature of the game is a dualistic moral alignment system based on the player's treatment of neutral targets. 
-                        Unlike the previous games in the series, Zero features non-hostile destructible "yellow targets" (called so because they 
-                        are highlighted yellow on the radar). These targets are either civilian ground facilities or previously hostile planes that 
-                        took critical damage and attempt to escape the battle airspace. Yellow targets are harmless and are not required to destroy 
-                        in order to complete the mission, so neither the wingman, nor allied planes will target them. However, since destroying yellow 
-                        targets brings additional credits, the player is given the option to shoot them at their discretion.
-                    </p>
-                </article>
-            </main>
+                    <!-- Game Description -->
+                    <main class="col-lg my-3 text-white rounded p-4" style="background-color: #0A0C26;">
+                            <h2 class="fw-bold">
+                            Ace Combat Zero
+                            </h2>
+                            <p>
+                                Ace Combat Zero: The Belkan War, published in Europe as Ace Combat: The Belkan War, is the eighth installment 
+                                in the Ace Combat franchise and a prequel to Ace Combat 5: The Unsung War. 
+                                The game was developed alongside Ace Combat 6: Fires of Liberation and released in 2006.
+                                It was the first Ace Combat game to be released under the newly-merged Namco Bandai. 
+                                The setting takes place in an alternate universe called "Strangereal", during the eponymous Belkan War. 
+                            </p>
+                            
+                            <p>
+                                The single-player campaign follows the story of a legendary mercenary ace, "Cipher", 
+                                and his impact on both the outcome of the Belkan War and the lives of the enemy aces he defeated in combat. 
+                                The story is narrated in retrospect by Osean journalist Brett Thompson and a series of his interviews with Belkan War veterans, 
+                                in particular with Cipher's former wingman Larry "Pixy" Foulke. 
+                            </p>
+                            
+                            <p>The central feature of the game is a dualistic moral alignment system based on the player's treatment of neutral targets. 
+                                Unlike the previous games in the series, Zero features non-hostile destructible "yellow targets" (called so because they 
+                                are highlighted yellow on the radar). These targets are either civilian ground facilities or previously hostile planes that 
+                                took critical damage and attempt to escape the battle airspace. Yellow targets are harmless and are not required to destroy 
+                                in order to complete the mission, so neither the wingman, nor allied planes will target them. However, since destroying yellow 
+                                targets brings additional credits, the player is given the option to shoot them at their discretion.
+                            </p>
+                    </main>
+                </div>
+           
 
                 <!-- Game screenshots -->
-                <div class="icon-container">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot1">
-                        <img class="icon1" src="images/Icon1.png" alt="Jet flying through railgun lasers">
-                    </button>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot2">
-                        <img class="icon2" src="images/Icon2.png" alt="Two jets dueling one another">
-                    </button>
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot3">
-                        <img class="icon3" src="images/Icon3.png" alt="Cockpit view of jet in combat">
-                    </button>
+                
+                <div class="row mb-5">
+                    <div class="col-lg">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot1">
+                            <img class="img-fluid rounded" src="images/Icon1.png" alt="Jet flying through railgun lasers">
+                        </button>
+                    </div>
+                    <div class="col-lg">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot2">
+                            <img class="img-fluid rounded" src="images/Icon2.png" alt="Two jets dueling one another">
+                        </button>
+                    </div>
+                    <div class="col-lg">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalScreenshot3">
+                            <img class="img-fluid rounded" src="images/Icon3.png" alt="Cockpit view of jet in combat">
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Modal -->

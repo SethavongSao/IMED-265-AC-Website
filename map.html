@@ -11,33 +11,40 @@
     
     <body class="text-white">
         
+   <nav class="navbar navbar-expand-sm navbar-dark mb-4" style="background-color:#0A0C26;">
+    <div class="container">
+     <a class="navbar-brand">
+        <img src="images/Galm1.webp" alt="Logo" height="75px">
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="timeline.html">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="characters.html">Characters</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
         <div class="container">
-            <!-- Navigation -->
-            <nav class="navigation">
-                <!-- 
-                <img class="logo" src="images/Logo.webp"> 
-                -->
-                <ul>
-                    
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="map.html">World Map</a>
-                    </li>
-                    <li>
-                        <a href="timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                        <a href="characters.html">Characters</a>
-                    </li>
-                </ul>
-            </nav>  
+  
 
-            <main class="container text-center">
-                <div class="row">
-                    <figure class=img-fluid">
-                        <img src="images/BelkanWarMap.svg" usemap="#MapTest">
+            <main class="container">
+                <div class="row text-center">
+                    <figure>
+                        <img class="img-fluid" src="images/BelkanWarMap.svg" usemap="#MapTest">
                     </figure>
                     <!-- Interactable Map Coords -->
                     <map name="MapTest">
@@ -102,7 +109,7 @@
                             In an attempt to reclaim their territory and resources, Belka would declare war on all it's neighbors on March 1995,
                             starting the Belkan War.
                         </p>
-                        <img src="images/Flags/BelkanFlag.webp">
+                        <img class="img-fluid" src="images/Flags/BelkanFlag.webp">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -132,7 +139,7 @@
                             In 1995, Belka declared war on all it's neighbors, including the Osean Federation. In response, The Osean Federation 
                             created the Allied Forces, an alliance of different countries that were against Belka. 
                         </p>
-                        <img src="images/Flags/OseaFlag.webp">
+                        <img src="images/Flags/OseaFlag.webp" style="inline-size: 100%;">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -248,7 +255,7 @@
                             Ustio would end up being occupied by Belka, until the Allied Forces and hired mercenaries were
                             able to liberate the country. 
                         </p>
-                        <img src="images/Flags/UstioFlag.webp">
+                        <img class="img-fluid" src="images/Flags/UstioFlag.webp">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -273,7 +280,7 @@
                             In March 1995, Belka would declare war on all it's neighbors in an attempt to regain their territory.
                             The kingdom joined the Allied Forces, and was able to fight back against Belka's invasion. 
                         </p>
-                        <img src="images/Flags/SapinFlag.webp">
+                        <img class="img-fluid" src="images/Flags/SapinFlag.webp" style="inline-size: 100%;">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -282,26 +289,6 @@
                 </div>
             </div>
 
-            <!-- Neutral Modal -->
-            <div class="modal fade" id="NeutralModal" tabindex="-1" aria-labelledby="NeutralModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="FATOModal">Neutral</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Neutral
-                            
-                        </p>
-                        <img src="images/placeholders/BelkanFlag.webp">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                    </div>
-                </div>
-            </div>
 
        
         </div>
