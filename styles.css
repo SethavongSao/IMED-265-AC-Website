@@ -3,10 +3,7 @@
 
 body {
     margin: 0;
-    /* other backgrounds i tried but didnt like, but im not sure so i MIGHT switch back to them, so i'm just leaving them here */
-    /* background-color: #13245A; */
-    /* background-image: url(images/BackgroundIndex.jpg) */
-     background-image: linear-gradient(to bottom, #13245A, #13335a);
+    background-image: linear-gradient(to bottom, #13245A, #13335a);
      
 }
 
@@ -46,85 +43,6 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 0.2em;
 }
-
-
-
-/* .navigation {
-    grid-column: span 3;
-    background-color: #0A0C26;
-    color: #FFFFFF;
-    margin: 2.5em 2em 1em;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-
-/* .logo {
-    max-height: 4.5rem;
-    border-radius: 50%;
-    margin: 0.2rem 1rem 0.2rem 2rem;
-}
-
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
-} */
-
-
-/* .banner-container {
-    grid-column: span 3;
-    margin: 1em 2em 0.5em;
-}
-
-.banner {
-    width: 100%;
-    border-radius: 15px;
-} */
-
-/* .side-image-container {
-    margin: 1.5em 1em 2em 2em;
-} */
-
-/* .side-image {
-    border-radius: 15px;
-} */
-
-/* .summary {
-    padding: 0.5em 1em 0em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.35rem;
-    background-color: #0A0C26;
-    border-radius: 15px;
-} */
-
-/* .icon-container {
-    grid-column: span 3;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 1em;
-    
-} */
-
-/* .icon1 {
-    max-inline-size: 100%;
-    grid-column: 1 / 1;
-    border-radius: 15px;
-}
-
-.icon2 {
-    max-inline-size: 100%;
-    grid-column: 2 / 2;
-    border-radius: 15px;
-}
-
-.icon3 {
-    max-inline-size: 100%;
-    grid-column: 3 / 3;
-    border-radius: 15px;
-} */
 
 .character-summary {
     padding: 1rem;
